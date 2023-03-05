@@ -1,4 +1,9 @@
 .App {
+  margin: 0 auto;
+  padding-block: 50px;
+  padding-inline: 15px;
+  max-width: 700px;
+  width: 100%;
   text-align: center;
 }
 
@@ -35,4 +40,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  border-bottom: 1px solid grey;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-add {
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+  border-right: 0;
+  border-color: black;
+}
+
+.btn-add {
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  border-radius: 0 6px 6px 0;
 }

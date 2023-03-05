@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ToDoItem from './ToDoItem/ToDoItem';
 import todosData from './todosData';
+import ToDoInput from './ToDoInput/todoinput';
 
 class App extends Component {
   constructor() {
@@ -37,6 +38,8 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h2>Todo list</h2>
+        <ToDoInput  />
         {finalTasks}
       </div>
     );
